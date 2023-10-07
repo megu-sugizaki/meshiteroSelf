@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
     
     def after_sign_in_path_for(resource)
         # ログインを実行したモデル（User)のデータのインスタンスが格納されている→どのuserなのか、定義を行わなくても引数でとってきてくれるということ（と思われる）（アプリ2第7章参照）
-        about_path
+        post_images_path
     end 
     
     def after_sign_out_path_for(resource)
